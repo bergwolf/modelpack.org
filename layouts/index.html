@@ -1,0 +1,183 @@
+{{ define "main" }}
+<section class="hero">
+    <div class="container">
+        <div class="hero-content">
+            <h1>ModelPack</h1>
+            <p class="hero-subtitle">CNCF Specification Standard for AI Model Packaging</p>
+            <p class="hero-description">A vendor-neutral, open source specification to package, distribute and run AI models in cloud native environments</p>
+            <div class="hero-buttons">
+                <a href="/getting-started/" class="btn btn-primary">Get Started</a>
+                <a href="https://github.com/modelpack/model-spec" class="btn btn-secondary" target="_blank" rel="noopener">View on GitHub</a>
+            </div>
+            <div class="hero-badges">
+                <img src="https://img.shields.io/badge/CNCF-Sandbox-blue?style=flat-square" alt="CNCF Sandbox">
+                <img src="https://img.shields.io/github/stars/modelpack/model-spec?style=flat-square" alt="GitHub Stars">
+                <img src="https://www.bestpractices.dev/projects/10919/badge" alt="OpenSSF Best Practices">
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="features">
+    <div class="container">
+        <h2>Why ModelPack?</h2>
+        <div class="features-grid">
+            <div class="feature-card">
+                <div class="feature-icon">🎯</div>
+                <h3>Standardization</h3>
+                <p>Use familiar OCI tooling and infrastructure for AI models, building on proven container standards</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔄</div>
+                <h3>Interoperability</h3>
+                <p>Package models once and run them across different platforms and tools without vendor lock-in</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🔒</div>
+                <h3>Security</h3>
+                <p>Leverage existing OCI security features including image signing and vulnerability scanning</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">⚡</div>
+                <h3>Efficiency</h3>
+                <p>Native Kubernetes integration eliminates manual model downloads and setup processes</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">📦</div>
+                <h3>Versioning</h3>
+                <p>Robust model version control using OCI tags and digests for reliable deployments</p>
+            </div>
+            <div class="feature-card">
+                <div class="feature-icon">🌍</div>
+                <h3>Ecosystem</h3>
+                <p>Build on the mature container ecosystem rather than creating new infrastructure</p>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="evolution">
+    <div class="container">
+        <h2>The Evolution of Infrastructure</h2>
+        <p class="section-intro">We are entering the AI Model-centric infrastructure age, following the progression of computing infrastructure:</p>
+        <div class="timeline">
+            <div class="timeline-item">
+                <div class="timeline-marker">1</div>
+                <div class="timeline-content">
+                    <h3>Machine-centric</h3>
+                    <p>GNU/Linux distributions and bare metal servers</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">2</div>
+                <div class="timeline-content">
+                    <h3>Virtual Machine-centric</h3>
+                    <p>Cloud computing and virtualization technologies</p>
+                </div>
+            </div>
+            <div class="timeline-item">
+                <div class="timeline-marker">3</div>
+                <div class="timeline-content">
+                    <h3>Container-centric</h3>
+                    <p>Docker, Kubernetes, and OCI standards</p>
+                </div>
+            </div>
+            <div class="timeline-item active">
+                <div class="timeline-marker">4</div>
+                <div class="timeline-content">
+                    <h3>AI Model-centric</h3>
+                    <p>AI model development and deployment standardization</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+
+<section class="quickstart">
+    <div class="container">
+        <h2>Quick Start</h2>
+        <div class="quickstart-steps">
+            <div class="step">
+                <div class="step-number">1</div>
+                <div class="step-content">
+                    <h3>Install modctl</h3>
+                    <pre><code>curl -sSL https://raw.githubusercontent.com/modelpack/modctl/main/install.sh | sh</code></pre>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">2</div>
+                <div class="step-content">
+                    <h3>Package Your Model</h3>
+                    <pre><code>modctl build -t myregistry.com/mymodel:v1.0 /path/to/model</code></pre>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">3</div>
+                <div class="step-content">
+                    <h3>Push to Registry</h3>
+                    <pre><code>modctl push myregistry.com/mymodel:v1.0</code></pre>
+                </div>
+            </div>
+            <div class="step">
+                <div class="step-number">4</div>
+                <div class="step-content">
+                    <h3>Use in Kubernetes</h3>
+                    <pre><code>kubectl apply -f model-pod.yaml</code></pre>
+                </div>
+            </div>
+        </div>
+        <div class="cta-center">
+            <a href="/getting-started/" class="btn btn-primary">Full Getting Started Guide →</a>
+        </div>
+    </div>
+</section>
+
+<section class="ecosystem-preview">
+    <div class="container">
+        <h2>Ecosystem Integration</h2>
+        <p class="section-intro">ModelPack integrates seamlessly with the cloud-native and AI/ML ecosystem:</p>
+        <div class="ecosystem-logos">
+            <div class="ecosystem-item">
+                <div class="ecosystem-name">OCI Registries</div>
+                <p>Harbor, Docker Hub</p>
+            </div>
+            <div class="ecosystem-item">
+                <div class="ecosystem-name">Kubernetes</div>
+                <p>CSI Driver, Volume Sources</p>
+            </div>
+            <div class="ecosystem-item">
+                <div class="ecosystem-name">Distribution</div>
+                <p>Dragonfly, ORAS</p>
+            </div>
+            <div class="ecosystem-item">
+                <div class="ecosystem-name">ML Platforms</div>
+                <p>Hugging Face, KitOps</p>
+            </div>
+        </div>
+        <div class="cta-center">
+            <a href="/ecosystem/" class="btn btn-secondary">Explore the Ecosystem →</a>
+        </div>
+    </div>
+</section>
+
+<section class="community-cta">
+    <div class="container">
+        <h2>Join the Community</h2>
+        <p>ModelPack is an open source CNCF Sandbox project. We welcome contributions, feedback, and collaboration!</p>
+        <div class="community-links">
+            <a href="https://slack.cncf.io/" class="community-link" target="_blank" rel="noopener">
+                <span class="link-icon">💬</span>
+                <span>Join us on Slack</span>
+            </a>
+            <a href="https://github.com/modelpack/model-spec/discussions" class="community-link" target="_blank" rel="noopener">
+                <span class="link-icon">💡</span>
+                <span>GitHub Discussions</span>
+            </a>
+            <a href="https://github.com/modelpack/model-spec" class="community-link" target="_blank" rel="noopener">
+                <span class="link-icon">⭐</span>
+                <span>Star on GitHub</span>
+            </a>
+        </div>
+    </div>
+</section>
+{{ end }}
