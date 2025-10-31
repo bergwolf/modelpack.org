@@ -18,7 +18,7 @@
                     </a>
                 </div>
                 <ul class="nav-menu">
-                    {{ range.Site.Menus.main }}
+                    {{ range .Site.Menus.main }}
                     <li><a href="{{ .URL }}">{{ .Name }}</a></li>
                     {{ end }}
                     <li><a href="https://github.com/modelpack/model-spec" target="_blank" rel="noopener">GitHub</a></li>
