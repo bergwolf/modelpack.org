@@ -1,0 +1,15 @@
+modelpack:
+  label: ModelPack
+  permalink: /modelpack
+  description: ModelPack related posts
+
+announcement:
+  label: Announcement
+  permalink: /announcement
+  description: Project announcements
+
+tutorial:
+  label: Tutorial
+  permalink: /tutorial
+  description: Tutorials and guides
+

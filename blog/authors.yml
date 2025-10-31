@@ -1,0 +1,8 @@
+modelpack:
+  name: ModelPack Team
+  title: CNCF Sandbox Project
+  url: https://github.com/modelpack
+  image_url: /img/modelpack-logo.png
+  socials:
+    github: modelpack
+
