@@ -275,62 +275,66 @@ header {
     color: var(--text-light);
 }
 
-/* Quick Start Section */
-.quickstart {
+/* Adopters Section */
+.adopters {
     padding: 5rem 0;
     background-color: var(--bg-white);
 }
 
-.quickstart h2 {
+.adopters h2 {
     text-align: center;
     font-size: 2.5rem;
-    margin-bottom: 3rem;
-}
-
-.quickstart-steps {
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-bottom: 3rem;
-}
-
-.step {
-    text-align: center;
-}
-
-.step-number {
-    width: 60px;
-    height: 60px;
-    border-radius: 50%;
-    background: linear-gradient(135deg, var(--primary-color), var(--accent-color));
-    color: white;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    font-size: 1.5rem;
-    font-weight: 700;
-    margin: 0 auto 1rem;
-}
-
-.step h3 {
-    font-size: 1.2rem;
     margin-bottom: 1rem;
-    color: var(--text-color);
 }
 
-.step pre {
-    background-color: var(--bg-light);
-    padding: 1rem;
-    border-radius: 6px;
-    overflow-x: auto;
-    text-align: left;
+.adopters-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 2rem;
+    margin-top: 3rem;
+}
+
+.adopter-card {
+    padding: 2rem;
+    background-color: var(--bg-white);
+    border-radius: 8px;
     border: 1px solid var(--border-color);
+    text-align: center;
+    transition: all 0.3s;
 }
 
-.step code {
-    font-family: 'Monaco', 'Courier New', monospace;
-    font-size: 0.85rem;
-    color: var(--text-color);
+.adopter-card:hover {
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-lg);
+}
+
+.adopter-icon {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.adopter-card h3 {
+    font-size: 1.5rem;
+    margin-bottom: 1rem;
+    color: var(--primary-color);
+}
+
+.adopter-card p {
+    color: var(--text-light);
+    line-height: 1.8;
+    margin-bottom: 1.5rem;
+}
+
+.adopter-link {
+    color: var(--primary-color);
+    text-decoration: none;
+    font-weight: 600;
+    transition: color 0.3s;
+}
+
+.adopter-link:hover {
+    color: var(--accent-color);
+    text-decoration: underline;
 }
 
 .cta-center {
@@ -579,7 +583,7 @@ footer {
 
     .features h2,
     .evolution h2,
-    .quickstart h2,
+    .adopters h2,
     .ecosystem-preview h2,
     .community-cta h2 {
         font-size: 2rem;
