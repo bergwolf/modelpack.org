@@ -56,6 +56,13 @@ header {
     font-size: 1.5rem;
     font-weight: 700;
     color: var(--primary-color);
+    display: flex;
+    align-items: center;
+}
+
+.logo-image {
+    height: 40px;
+    width: auto;
 }
 
 .logo-text {
@@ -321,6 +328,13 @@ header {
     width: 100%;
     height: 100%;
     object-fit: contain;
+}
+
+/* Adjust harbor and cri-o logos to match kitops size */
+.adopter-logo img[src*="harbor.svg"],
+.adopter-logo img[src*="crio.svg"] {
+    width: 60%;
+    height: 60%;
 }
 
 .adopter-card h3 {
