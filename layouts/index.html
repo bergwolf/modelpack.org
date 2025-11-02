@@ -93,41 +93,35 @@
     </div>
 </section>
 
-<section class="quickstart">
+<section class="adopters">
     <div class="container">
-        <h2>Quick Start</h2>
-        <div class="quickstart-steps">
-            <div class="step">
-                <div class="step-number">1</div>
-                <div class="step-content">
-                    <h3>Install modctl</h3>
-                    <pre><code>curl -sSL https://raw.githubusercontent.com/modelpack/modctl/main/install.sh | sh</code></pre>
+        <h2>Adopters</h2>
+        <p class="section-intro">Organizations and projects using the ModelPack specification:</p>
+        <div class="adopters-grid">
+            <div class="adopter-card">
+                <div class="adopter-logo">
+                    <img src="/images/adopters/kitops.svg" alt="KitOps logo">
                 </div>
+                <h3>KitOps</h3>
+                <p>Open source tooling for packaging and sharing AI/ML projects</p>
+                <a href="https://kitops.org/" target="_blank" rel="noopener" class="adopter-link">Visit KitOps →</a>
             </div>
-            <div class="step">
-                <div class="step-number">2</div>
-                <div class="step-content">
-                    <h3>Package Your Model</h3>
-                    <pre><code>modctl build -t myregistry.com/mymodel:v1.0 /path/to/model</code></pre>
+            <div class="adopter-card">
+                <div class="adopter-logo">
+                    <img src="/images/adopters/harbor.svg" alt="Harbor logo">
                 </div>
+                <h3>Harbor</h3>
+                <p>Cloud native registry for storing and distributing OCI artifacts</p>
+                <a href="https://goharbor.io/" target="_blank" rel="noopener" class="adopter-link">Visit Harbor →</a>
             </div>
-            <div class="step">
-                <div class="step-number">3</div>
-                <div class="step-content">
-                    <h3>Push to Registry</h3>
-                    <pre><code>modctl push myregistry.com/mymodel:v1.0</code></pre>
+            <div class="adopter-card">
+                <div class="adopter-logo">
+                    <img src="/images/adopters/crio.svg" alt="CRI-O logo">
                 </div>
+                <h3>CRI-O</h3>
+                <p>Lightweight container runtime for Kubernetes</p>
+                <a href="https://cri-o.io/" target="_blank" rel="noopener" class="adopter-link">Visit CRI-O →</a>
             </div>
-            <div class="step">
-                <div class="step-number">4</div>
-                <div class="step-content">
-                    <h3>Use in Kubernetes</h3>
-                    <pre><code>kubectl apply -f model-pod.yaml</code></pre>
-                </div>
-            </div>
-        </div>
-        <div class="cta-center">
-            <a href="/getting-started/" class="btn btn-primary">Full Getting Started Guide →</a>
         </div>
     </div>
 </section>
