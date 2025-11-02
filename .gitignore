@@ -1,0 +1,10 @@
+public/
+resources/
+.hugo_build.lock
+node_modules/
+.DS_Store
+hugo.tar.gz
+hugo_extended_*.tar.gz
+*.backup
+LICENSE
+hugo
