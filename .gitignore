@@ -4,5 +4,7 @@ resources/
 node_modules/
 .DS_Store
 hugo.tar.gz
+hugo_extended_*.tar.gz
 *.backup
 LICENSE
+hugo
