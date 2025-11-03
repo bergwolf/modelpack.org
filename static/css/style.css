@@ -92,6 +92,18 @@ header {
     color: var(--primary-color);
 }
 
+.github-link {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.github-icon {
+    width: 20px;
+    height: 20px;
+    vertical-align: middle;
+}
+
 /* Hero Section */
 .hero {
     background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
