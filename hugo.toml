@@ -6,27 +6,7 @@ title = 'ModelPack - CNCF AI Model Packaging Standard'
   description = 'CNCF ModelPack is a vendor-neutral, open source specification standard to package, distribute and run AI models in cloud native environments'
   keywords = 'ModelPack, CNCF, AI, ML, OCI, Kubernetes, Cloud Native, Model Registry'
 
-[menu]
-  [[menu.main]]
-    name = "Home"
-    url = "/"
-    weight = 1
-  [[menu.main]]
-    name = "Getting Started"
-    url = "/getting-started/"
-    weight = 2
-  [[menu.main]]
-    name = "Specification"
-    url = "/specification/"
-    weight = 3
-  [[menu.main]]
-    name = "Ecosystem"
-    url = "/ecosystem/"
-    weight = 4
-  [[menu.main]]
-    name = "Community"
-    url = "/community/"
-    weight = 5
+
 
 [markup]
   [markup.goldmark]
