@@ -186,8 +186,10 @@ header {
 
 .features-grid {
     display: grid;
+    width: 80%;
     grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-    gap: 2rem;
+    gap: 5rem;
+    margin: 0 auto 3rem;
 }
 
 .feature-card {
@@ -299,8 +301,9 @@ header {
 .adopters-grid {
     display: grid;
     grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
-    gap: 2rem;
-    margin-top: 3rem;
+    gap: 4rem;
+    width: 80%;
+    margin: 0 auto 3rem;
 }
 
 .adopter-card {
